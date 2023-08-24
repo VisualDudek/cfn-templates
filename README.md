@@ -14,7 +14,7 @@ The repository is organized into the following directories:
 
 - `examples/`: In this directory, you'll find practical examples of how to use the CloudFormation templates provided in the `templates/` directory.
 
-- `docs/`: Here, you can find supplementary documentation, guides, and explanations to help you understand the templates and their usage.
+- `docs/`: Here, you can find supplementary documentation, guides, and explanations to help you understand the templates and their usage. See [Docs](docs/DOCS.md)
 
 ## Getting Started
 
