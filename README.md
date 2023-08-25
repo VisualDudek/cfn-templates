@@ -4,7 +4,7 @@ Welcome to my AWS CloudFormation templates repository! This repository contains 
 
 ## About the Workshop
 
-This repository is based on the **AWS Workshop**, which provided valuable insights into deploying and managing infrastructure as code using AWS CloudFormation. The workshop covered essential topics such as template structure, resource provisioning, parameterization, and best practices for managing AWS resources efficiently.
+Idea of this repository is based on the **[AWS CloudFormation Workshop](https://github.com/aws-samples/cfn101-workshop)**, which provided valuable insights into deploying and managing infrastructure as code using AWS CloudFormation.
 
 ## Repository Structure
 
