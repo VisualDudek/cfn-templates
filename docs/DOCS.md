@@ -13,7 +13,25 @@
 
 ## Discussion
 
-All top-lvl objects in yaml template are optional
+All top-lvl objects in yaml template are optional.
+Structure of template
+
+Metadata -> `AWS::CloudFormation::Interface` defines how parameters are grouped and sorted in the AWD CloudFormation console.
+NOTE: only console uses Interface metadata key. CLI and API calls don't use this key. 
+
+**Parameters** define in `Parameters` block and use via `!Ref` -> intrinsic function (other e.g. `!Join`, `!Sub`)
+Can acces public parameters stored in SSM parameter store or store priv parameters.
+
+list parameters stored in SSM Parameter Store:
+```sh
+aws ssm describe-parameters
+```
+
+**Intrinsic functions**
+
+*Fn::Ref* - 
+
+*Fn::Join* - manipulate strings, usecase -> tags
 
 
 ## Convert templates between JSON and YAML
