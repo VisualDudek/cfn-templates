@@ -28,10 +28,30 @@ aws ssm describe-parameters
 ```
 
 **Intrinsic functions**
+In YAML format fn have short and full syntax
 
 *Fn::Ref* - 
 
 *Fn::Join* - manipulate strings, usecase -> tags
+
+*Fn::Sub* - 
+Usecase: YAML literal block to specify the user data script.
+If you specify template parameter names or resource logical IDs, such as ${InstanceTypeParameter}, CloudFormation returns the same values as if you used the Ref intrinsic function.
+
+
+Rsources:
+S3 - it seems that you can specify region only via flag when deployd (`--region`) and not inside IaC -> stack are regional?
+
+## AWC-CLI autocompletion
+[Command completion aws docs](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html)
+There are two typs of aws-cli autocompletion (1) script (2) v2 auto-prompt
+
+auto-prompt config:
+```txt
+[my-profile] #or [default]
+#...
+cli_auto_prompt = on #or on-partial
+```
 
 
 ## Convert templates between JSON and YAML
