@@ -19,6 +19,8 @@ Structure of template
 Metadata -> `AWS::CloudFormation::Interface` defines how parameters are grouped and sorted in the AWD CloudFormation console.
 NOTE: only console uses Interface metadata key. CLI and API calls don't use this key. 
 
+`Description:` use "Folded Block Scalar" `>`, will fold newlines to spaces.
+
 **Parameters** define in `Parameters` block and use via `!Ref` -> intrinsic function (other e.g. `!Join`, `!Sub`)
 Can acces public parameters stored in SSM parameter store or store priv parameters.
 
