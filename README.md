@@ -16,7 +16,7 @@ The repository is organized into the following directories:
 
 - `docs/`: Here, you can find supplementary documentation, guides, and explanations to help you understand the templates and their usage. See [Docs](docs/DOCS.md)
 
-- `labs/`: Here, you can find my aws labs 
+- `labs/`: This directory contains hands-on labs for AWS CloudFormation. **Before you dive into individual labs, please start by reading the [LABS_README](labs/LABS_README.md). It contains important introductory information, prerequisites, and general guidance to ensure you have a smooth and effective learning expirence.
 
 
 ## Getting Started
