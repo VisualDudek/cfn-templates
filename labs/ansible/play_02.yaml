@@ -1,0 +1,8 @@
+---
+- name: Dynamic SSH User from EC2 Tags
+  hosts: all
+  gather_facts: True
+  remote_user: "{{ tags.login_name }}"
+  tasks:
+    - name: Ping Task
+      ping:
