@@ -29,6 +29,11 @@ run playbook:
 ansible-playbook -i labs/ansible/inventory.aws_ec2.yaml labs/ansible/play_02.yaml -v
 ```
 
+get dynamic inventory info:
+```sh
+ansible-inventory -i labs/ansible/inventory.aws_ec2.yaml --list
+```
+
 `invnetory.aws_ec2.yaml` - file must end with `aws_ec2.{yml|yaml}`. Provide correct region
 
 
