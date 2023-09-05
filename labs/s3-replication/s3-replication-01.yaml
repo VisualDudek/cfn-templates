@@ -14,7 +14,7 @@ Resources:
           Prefix: ''
           Status: Enabled
           Destination:
-            # Fix hardcoded Partition in ARN
+            # Fix hardcoded Partition in ARN DONE: AWS::Partition
             Bucket: !Sub "arn:${AWS::Partition}:s3:::${DestinationBucket}"
 
   DestinationBucket:
