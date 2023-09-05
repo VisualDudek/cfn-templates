@@ -44,6 +44,13 @@ If you specify template parameter names or resource logical IDs, such as ${Insta
 Rsources:
 S3 - it seems that you can specify region only via flag when deployd (`--region`) and not inside IaC -> stack are regional?
 
+**Pseudo Parameters**
+Pseudo parameters are parameters predefined by CloudFormation.
+e.g. `AWS::AccountId`  `AWS::Region`  `AWS::Partition`
+
+## FAQ
+- How to code condition: provide name of key pair if not (defaut) use Imported key
+
 ## AWC-CLI autocompletion
 [Command completion aws docs](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html)
 There are two typs of aws-cli autocompletion (1) script (2) v2 auto-prompt

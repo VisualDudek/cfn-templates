@@ -37,4 +37,11 @@ ansible-inventory -i labs/ansible/inventory.aws_ec2.yaml --list
 `invnetory.aws_ec2.yaml` - file must end with `aws_ec2.{yml|yaml}`. Provide correct region
 
 
+### interface
+Overall, this template excerpt sets up a simple infrastructure for a Lambda function that requires access to an SSM parameter. The `Metadata` section provides a user-friendly interface for setting the `DatabaseUsername` parameter, and the `Parameters` section defines the parameter itself. The `Resources` section defines the SSM parameter and IAM role needed for the Lambda function to access the parameter.
+
+
 ### s3-replication
+This CloudFormation template creates two S3 buckets and an IAM role. The first bucket, `SourceBucket`, is configured with versioning and replication to the second bucket, `DestinationBucket`. The replication is defined by a replication rule that replicates all objects in the bucket. The IAM role, `ReplicationRole`, is used by the replication configuration to grant permissions to replicate objects between the two buckets. Additionally, the policy for the `ReplicationRole` is defined in a separate resource, `BucketBackupPolicy`.
+
+Overall, this template sets up a simple replication configuration between two S3 buckets and creates the necessary IAM role and policy to enable the replication.
