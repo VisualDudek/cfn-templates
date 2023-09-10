@@ -48,6 +48,13 @@ S3 - it seems that you can specify region only via flag when deployd (`--region`
 Pseudo parameters are parameters predefined by CloudFormation.
 e.g. `AWS::AccountId`  `AWS::Region`  `AWS::Partition`
 
+**Mappings**
+You need this if you want to set up parameters value based on provided other parameter e.g. AMI ID based on region, instanace type based on prod or test environment.
+syntax based on `!FindInMap` and top-lvl `Mappings:`
+
+**Outputs**
+
+
 ## FAQ
 - How to code condition: provide name of key pair if not (defaut) use Imported key
 
